@@ -1,3 +1,7 @@
+body {
+  font-family: 'Arvo', serif;
+}
+
 .line {
   background: #004e92;
   height: 5px;
