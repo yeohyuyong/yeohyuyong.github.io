@@ -1,12 +1,8 @@
-body {
-  font-family: 'Arvo', serif;
-}
-
 .line {
-  background: #004e92;
-  height: 5px;
-  border-radius: 0px;
-  width: 0%;
-  position: fixed;
-  top: 0;
+	background: #004e92;
+	height: 5px;
+	border-radius: 0px;
+	width: 0%;
+	position: fixed;
+	top: 0;
 }
