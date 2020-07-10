@@ -47,8 +47,8 @@ p.lead {
 
 .subheading {
 	text-transform: uppercase;
-	font-weight: 500;
-	font-family: "Trocchi", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+	font-weight: 600;
+	font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 		"Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
 		"Segoe UI Symbol", "Noto Color Emoji";
 	font-size: 1.5rem;
@@ -176,10 +176,4 @@ section.resume-section .resume-item .resume-date {
 
 a {
 	color: #1d2951;
-}
-
-a:active,
-a:focus,
-a:hover {
-	color: #824027;
 }
