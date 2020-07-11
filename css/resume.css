@@ -30,6 +30,10 @@ h1 {
 	line-height: 5.5rem;
 }
 
+h1:nth-child(1) {
+	color: #000;
+}
+
 h2 {
 	font-size: 3.5rem;
 }
@@ -41,6 +45,10 @@ h3 {
 p.lead {
 	font-size: 1.15rem;
 	font-weight: 400;
+}
+
+#name {
+	color: #fff;
 }
 
 .subheading {
@@ -70,10 +78,6 @@ p.lead {
 	color: #1d2951;
 }
 
-.social-icons a:last-child {
-	margin-right: 0;
-}
-
 .resume {
 	position: relative;
 	bottom: 0.2rem;
@@ -95,10 +99,6 @@ p.lead {
 	font-weight: 800;
 	letter-spacing: 0.05rem;
 	text-transform: uppercase;
-}
-
-#sideNav .navbar-toggler:focus {
-	outline-color: #d48a6e;
 }
 
 @media (min-width: 992px) {
@@ -177,4 +177,8 @@ section.resume-section .resume-item .resume-date {
 
 a {
 	color: #1d2951;
+}
+
+a:hover {
+	color: red;
 }
