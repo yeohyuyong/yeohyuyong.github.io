@@ -70,6 +70,7 @@ p.lead {
 	font-size: 2rem;
 	line-height: 3.5rem;
 	margin-right: 1rem;
+	margin-bottom: 1rem;
 	transition: background-color 0.3s ease;
 }
 
@@ -81,7 +82,7 @@ p.lead {
 .resume {
 	position: relative;
 	bottom: 0.2rem;
-	left: 0.5rem;
+	/* left: 0.5rem; */
 	padding: 0.7rem 1.5rem;
 	font-size: 1.5rem;
 	border: 0.2rem solid #1d2951;
@@ -164,6 +165,16 @@ section.resume-section .resume-item .resume-date {
 	section.resume-section {
 		padding-top: 3rem !important;
 		padding-bottom: 3rem !important;
+	}
+}
+
+@media (max-width: 430px) {
+	.resume {
+		display: block;
+		height: 58px;
+		width: 205px;
+		text-align: center;
+		padding-bottom: 3rem;
 	}
 }
 
