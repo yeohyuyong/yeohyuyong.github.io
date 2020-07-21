@@ -193,3 +193,15 @@ a {
 a:hover {
 	color: red;
 }
+
+table tr td:nth-child(1) {
+	width: 50%;
+}
+
+table tr td:nth-child(2) {
+	width: 10%;
+}
+
+table tr td:nth-child(3) {
+	width: 20%;
+}
