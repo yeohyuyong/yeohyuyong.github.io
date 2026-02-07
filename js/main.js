@@ -17,24 +17,28 @@
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
 					entry.target.classList.add('visible');
-					const id = entry.target.getAttribute('id');
-					if (id) {
-						navLinks.forEach((link) => {
-							const match = link.getAttribute('href') === `#${id}`;
-							link.classList.toggle('active', match);
-						});
+					if (entry.target.tagName === 'SECTION') {
+						const id = entry.target.getAttribute('id');
+						if (id) {
+							navLinks.forEach((link) => {
+								const match = link.getAttribute('href') === `#${id}`;
+								link.classList.toggle('active', match);
+							});
+						}
 					}
 				}
 			});
 		},
-		{ threshold: 0.35 }
+		{ threshold: 0.25 }
 	);
 
 	sections.forEach((section, idx) => {
 		section.classList.add('reveal');
 		section.style.transitionDelay = `${Math.min(idx * 80, 240)}ms`;
-		observer.observe(section);
 	});
+
+	const revealItems = document.querySelectorAll('.reveal');
+	revealItems.forEach((el) => observer.observe(el));
 
 	// Smooth scrolling fallback for browsers without native support
 	navLinks.forEach((link) => {
