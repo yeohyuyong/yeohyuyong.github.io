@@ -284,8 +284,8 @@ a:hover {
 
 .timeline-item {
 	display: grid;
-	grid-template-columns: 160px minmax(0, 1fr);
-	column-gap: 24px;
+	grid-template-columns: 200px minmax(0, 1fr);
+	column-gap: 28px;
 	margin-bottom: 28px;
 	position: relative;
 	padding-left: 18px;
@@ -296,6 +296,8 @@ a:hover {
 	color: var(--muted);
 	font-size: 0.95rem;
 	position: relative;
+	white-space: normal;
+	line-height: 1.5;
 }
 
 .timeline-item::before {
