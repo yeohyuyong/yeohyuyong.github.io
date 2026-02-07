@@ -133,7 +133,7 @@ a:hover {
 }
 
 .section {
-	padding: 96px 0;
+	padding: 104px 0;
 }
 
 .section-title {
@@ -347,6 +347,14 @@ a:hover {
 	margin-bottom: 0.75rem;
 }
 
+.skill-card {
+	padding: 22px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 0.9rem;
+}
+
 .card-icon {
 	width: 46px;
 	height: 46px;
@@ -363,17 +371,17 @@ a:hover {
 .chip-row {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 0.5rem;
+	gap: 0.65rem;
 }
 
 .chip {
-	padding: 0.4rem 0.75rem;
+	padding: 0.45rem 0.9rem;
 	border-radius: 999px;
 	background: rgba(14, 165, 233, 0.12);
 	border: 1px solid rgba(14, 165, 233, 0.3);
 	color: #0f172a;
 	font-weight: 600;
-	font-size: 0.92rem;
+	font-size: 0.9rem;
 }
 
 .glass {
@@ -411,6 +419,12 @@ a:hover {
 	.timeline-date {
 		margin-bottom: 0.25rem;
 	}
+	.chip {
+		font-size: 0.9rem;
+	}
+	.skill-card {
+		padding: 20px;
+	}
 }
 
 @media (max-width: 576px) {
@@ -422,5 +436,14 @@ a:hover {
 	}
 	.hero {
 		padding: 90px 0 70px;
+	}
+	.projects-grid {
+		gap: 18px;
+	}
+	.skill-card {
+		padding: 18px;
+	}
+	.chip-row {
+		gap: 0.5rem;
 	}
 }
