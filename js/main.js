@@ -53,4 +53,41 @@
 			}
 		});
 	});
+	// -- YOLO Mode --
+	const konamiCode = [
+		'ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown',
+		'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight',
+		'b', 'a'
+	];
+	let konamiIndex = 0;
+
+	const triggerYoloMode = () => {
+		document.body.classList.add('party-mode');
+
+		const confettiContainer = document.createElement('div');
+		confettiContainer.className = 'confetti';
+		for (let i = 0; i < 13; i++) {
+			const piece = document.createElement('div');
+			piece.className = 'confetti-piece';
+			confettiContainer.appendChild(piece);
+		}
+		document.body.appendChild(confettiContainer);
+
+		setTimeout(() => {
+			document.body.classList.remove('party-mode');
+			document.body.removeChild(confettiContainer);
+		}, 8000); // Party for 8 seconds
+	};
+
+	document.addEventListener('keydown', (e) => {
+		if (e.key === konamiCode[konamiIndex]) {
+			konamiIndex++;
+			if (konamiIndex === konamiCode.length) {
+				konamiIndex = 0;
+				triggerYoloMode();
+			}
+		} else {
+			konamiIndex = 0;
+		}
+	});
 })();
