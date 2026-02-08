@@ -3,59 +3,59 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-		<title>Yeoh Yu Yong | Portfolio</title>
+		<title>Yeoh Yu Yong | Quantitative Portfolio</title>
 		<link rel="icon" type="image/png" href="/img/title-icon.png" />
 
+		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+		<!-- Icons -->
 		<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+		
+		<!-- Custom CSS (No Bootstrap) -->
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 
 	<body>
-		<div class="progress-track"><div class="progress-bar"></div></div>
+		<div class="progress-container"><div class="progress-bar"></div></div>
 
-		<nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm bg-white" id="topNav">
-			<a class="navbar-brand font-weight-bold" href="#about">YY</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav ml-auto align-items-lg-center">
-					<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-					<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-					<li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-					<li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-					<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+		<nav class="navbar" id="topNav">
+			<div class="container">
+				<a class="navbar-brand" href="#about">YY</a>
+				<button class="navbar-toggler" id="mobile-menu-btn" aria-label="Toggle navigation">
+					<i class="fas fa-bars"></i>
+				</button>
+				<ul class="navbar-nav" id="nav-links">
+					<li><a class="nav-link" href="#about">About</a></li>
+					<li><a class="nav-link" href="#projects">Projects</a></li>
+					<li><a class="nav-link" href="#experience">Experience</a></li>
+					<li><a class="nav-link" href="#education">Education</a></li>
+					<li><a class="nav-link" href="#skills">Skills</a></li>
 				</ul>
 			</div>
 		</nav>
 
 		<main>
 			<section class="hero" id="about">
-				<div class="container hero-content">
-					<div class="row align-items-center">
-						<div class="col-lg-7 mb-4 mb-lg-0">
-							<p class="eyebrow">Applied Mathematics · Quantitative Projects</p>
-							<h1 class="display-4 font-weight-bold">Yeoh Yu Yong</h1>
-							<p class="lead">Applied Mathematics student at Nanyang Technological University with strong skills in data analysis, financial modeling, and programming in Python and R. Experienced in developing trading strategies and working on quantitative projects. Seeking to apply my analytical and technical skills in finance or data-driven roles.</p>
-							<div class="d-flex flex-wrap align-items-center gap-3 cta-row">
-								<a class="btn btn-primary mr-2" href="assets/YYY_Resume.pdf" target="_blank">Download Resume</a>
-								<a class="btn btn-ghost" href="mailto:yeoh.yuyong@gmail.com">Contact</a>
-							</div>
-							<div class="social-row mt-4">
-								<a class="social-chip" href="https://github.com/yeohyuyong" target="_blank"><i class="fab fa-github"></i><span>GitHub</span></a>
-								<a class="social-chip" href="https://www.linkedin.com/in/yeohyuyong" target="_blank"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
-							</div>
+				<div class="container hero-content fade-in-up">
+					<div class="hero-text">
+						<p class="eyebrow">Applied Mathematics &middot; Quantitative Finance</p>
+						<h1>Yeoh Yu Yong</h1>
+						<p class="lead">Applied Mathematics student at NTU. Specializing in stochastic calculus, financial modeling, and algorithmic trading. Leveraging data to decode market complexities.</p>
+						<div class="cta-row" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+							<a class="btn btn-primary" href="assets/YYY_Resume.pdf" target="_blank">Download CV</a>
+							<a class="btn btn-ghost" href="mailto:yeoh.yuyong@gmail.com">Contact Me</a>
 						</div>
-						<div class="col-lg-5 text-center">
-							<div class="profile-glass">
-								<img src="img/profile.png" alt="Portrait of Yeoh Yu Yong" class="img-fluid rounded-circle" />
-								<div class="profile-meta mt-3">Singapore · yeoh.yuyong@gmail.com · yeohyuyong.github.io</div>
-							</div>
+						<div class="social-links">
+							<a class="social-icon" href="https://github.com/yeohyuyong" target="_blank"><i class="fab fa-github"></i></a>
+							<a class="social-icon" href="https://www.linkedin.com/in/yeohyuyong" target="_blank"><i class="fab fa-linkedin"></i></a>
+						</div>
+					</div>
+					<div class="hero-visual">
+						<div class="profile-img-container">
+							<img src="img/profile.png" alt="Yeoh Yu Yong" class="profile-img" />
 						</div>
 					</div>
 				</div>
@@ -63,75 +63,72 @@
 
 			<section class="section" id="projects">
 				<div class="container">
-					<div class="section-header">
-						<p class="eyebrow">Selected Work</p>
-						<h2 class="section-title">Projects</h2>
-					</div>
+					<p class="eyebrow">Selected Work</p>
+					<h2>Projects</h2>
+					<br>
 					<div class="projects-grid">
-						<div class="project-card reveal">
-							<a href="projects/covid-19-impact-analysis-on-singapore.html" class="card-link">
-								<div class="card-top">
-									<h3>COVID-19 Impact Analysis on Singapore</h3>
-									<p class="meta">R · Aug 2025 - Present</p>
-								</div>
-							</a>
-							<ul>
-								<li>Developed a Dynamic Inoperability Input-Output Model (DIIM) using Singapore's IO tables in collaboration with DSO National Laboratories</li>
-								<li>Simulated sector interdependencies to model economic disruptions and identify key recovery priorities</li>
-								<li>Performed sensitivity analysis showing consistent sector loss rankings across varying lockdown durations</li>
+						<!-- Project 1 -->
+						<div class="project-card fade-in-up">
+							<h3 class="project-title">COVID-19 Impact Analysis</h3>
+							<p class="project-tech">R &middot; IO Models</p>
+							<p class="meta" style="color:var(--text-muted); margin-bottom:0.5rem; font-size:0.9rem;">Aug 2025 - Present</p>
+							<ul class="project-list">
+								<li>Developed a Dynamic Inoperability Input-Output Model (DIIM) using Singapore's IO tables.</li>
+								<li>Simulated sector interdependencies to identify key recovery priorities.</li>
+								<li>Performed sensitivity analysis on lockdown durations.</li>
 							</ul>
+							<a href="projects/covid-19-impact-analysis-on-singapore.html" class="btn btn-ghost" style="margin-top:auto; font-size:0.9rem; align-self: flex-start;">View Details</a>
 						</div>
-						<div class="project-card reveal">
-							<a href="projects/ml-optimized-pairs-trading.html" class="card-link">
-								<div class="card-top">
-									<h3>ML-Optimized Pairs Trading</h3>
-									<p class="meta">Python, Bayesian Optimization, XGBoost · Jan 2025 - Apr 2025</p>
-								</div>
-							</a>
-							<ul>
-								<li>Built a machine learning-based pairs trading strategy integrating Bayesian optimization and XGBoost forecasting</li>
-								<li>Selected cointegrated stock pairs and predicted next-day price spreads to inform trades</li>
-								<li>Outperformed benchmarks with a 19.81% return and Sharpe ratio of 2.53</li>
+
+						<!-- Project 2 -->
+						<div class="project-card fade-in-up">
+							<h3 class="project-title">ML-Optimized Pairs Trading</h3>
+							<p class="project-tech">Python &middot; XGBoost &middot; Bayesian Opt</p>
+							<p class="meta" style="color:var(--text-muted); margin-bottom:0.5rem; font-size:0.9rem;">Jan 2025 - Apr 2025</p>
+							<ul class="project-list">
+								<li>Built a pairs trading strategy with Bayesian optimization and XGBoost.</li>
+								<li>Predicted price spreads for cointegrated pairs.</li>
+								<li>Achieved 19.81% return and Sharpe ratio of 2.53.</li>
 							</ul>
+							<a href="projects/ml-optimized-pairs-trading.html" class="btn btn-ghost" style="margin-top:auto; font-size:0.9rem; align-self: flex-start;">View Details</a>
 						</div>
-						<div class="project-card reveal">
-							<a href="projects/hdb-price-prediction.html" class="card-link">
-								<div class="card-top">
-									<h3>HDB Price Prediction</h3>
-									<p class="meta">R, Linear Regression, Tree-based Methods · Jan 2025 - Apr 2025</p>
-								</div>
-							</a>
-							<ul>
-								<li>Evaluated multiple models including Linear Regression, Ridge/LASSO, Bagging, and Random Forest</li>
-								<li>Analyzed node count vs. deviance to tune tree-based approaches</li>
-								<li>Bagging achieved the lowest RMSE of 41,230.59</li>
+
+						<!-- Project 3 -->
+						<div class="project-card fade-in-up">
+							<h3 class="project-title">HDB Price Prediction</h3>
+							<p class="project-tech">R &middot; Random Forest &middot; Bagging</p>
+							<p class="meta" style="color:var(--text-muted); margin-bottom:0.5rem; font-size:0.9rem;">Jan 2025 - Apr 2025</p>
+							<ul class="project-list">
+								<li>Evaluated Regression, Ridge/LASSO, and Tree-based models.</li>
+								<li>Bagging achieved lowest RMSE of 41,230.59.</li>
+								<li>Analyzed node count vs. deviance for tuning.</li>
 							</ul>
+							<a href="projects/hdb-price-prediction.html" class="btn btn-ghost" style="margin-top:auto; font-size:0.9rem; align-self: flex-start;">View Details</a>
 						</div>
-						<div class="project-card reveal">
-							<a href="projects/usd-twin-win-certificate-pricing-risk.html" class="card-link">
-								<div class="card-top">
-									<h3>USD Twin Win Certificate Pricing &amp; Risk</h3>
-									<p class="meta">R, yfinance API · Aug 2024 - Nov 2024</p>
-								</div>
-							</a>
-							<ul>
-								<li>Priced structured product using multidimensional GBM with variance reduction</li>
-								<li>Compared variance reduction techniques via simulated price paths</li>
-								<li>Empirical Martingale Correction to Control Variates yielded lowest RMSE of 18.41</li>
+
+						<!-- Project 4 -->
+						<div class="project-card fade-in-up">
+							<h3 class="project-title">Structured Product Pricing</h3>
+							<p class="project-tech">R &middot; Monte Carlo &middot; GBM</p>
+							<p class="meta" style="color:var(--text-muted); margin-bottom:0.5rem; font-size:0.9rem;">Aug 2024 - Nov 2024</p>
+							<ul class="project-list">
+								<li>Priced Twin Win Certificates using multidimensional GBM.</li>
+								<li>Implemented Variance Reduction (Control Variates).</li>
+								<li>Lowest RMSE of 18.41 with Empirical Martingale Correction.</li>
 							</ul>
+							<a href="projects/usd-twin-win-certificate-pricing-risk.html" class="btn btn-ghost" style="margin-top:auto; font-size:0.9rem; align-self: flex-start;">View Details</a>
 						</div>
-						<div class="project-card reveal">
-							<a href="projects/ensemble-dl-for-flower-classification.html" class="card-link">
-								<div class="card-top">
-									<h3>Ensemble DL for Flower Classification</h3>
-									<p class="meta">Python · Aug 2024 - Nov 2024</p>
-								</div>
-							</a>
-							<ul>
-								<li>Built an ensemble of VGG16, VGG19, and DeiT models on Oxford Flowers 102</li>
-								<li>Implemented to improve accuracy over baseline SVM</li>
-								<li>Delivered 80.71% test accuracy vs 72.8% baseline</li>
+
+						<!-- Project 5 -->
+						<div class="project-card fade-in-up">
+							<h3 class="project-title">Ensemble DL for Classification</h3>
+							<p class="project-tech">Python &middot; PyTorch &middot; VGG/DeiT</p>
+							<p class="meta" style="color:var(--text-muted); margin-bottom:0.5rem; font-size:0.9rem;">Aug 2024 - Nov 2024</p>
+							<ul class="project-list">
+								<li>Ensemble of VGG16, VGG19, and DeiT on Oxford Flowers 102.</li>
+								<li>Achieved 80.71% accuracy vs 72.8% SVM baseline.</li>
 							</ul>
+							<a href="projects/ensemble-dl-for-flower-classification.html" class="btn btn-ghost" style="margin-top:auto; font-size:0.9rem; align-self: flex-start;">View Details</a>
 						</div>
 					</div>
 				</div>
@@ -139,34 +136,38 @@
 
 			<section class="section" id="experience">
 				<div class="container">
-					<div class="section-header">
-						<p class="eyebrow">Professional</p>
-						<h2 class="section-title">Experience</h2>
-					</div>
+					<p class="eyebrow">Professional Track</p>
+					<h2>Experience</h2>
+					<br>
 					<div class="timeline">
-						<div class="timeline-item reveal">
-							<div class="timeline-date">May 2025 - Aug 2025</div>
-							<div class="timeline-card glass">
-								<h3>Bioinformatics Intern</h3>
-								<p class="meta">Agency for Science, Technology and Research (A*STAR) · Singapore</p>
-								<ul>
-									<li>Addressed confounding bias in observational studies to improve statistical inference</li>
-									<li>Developed hybrid matching and weighting algorithm outperforming traditional propensity score matching and IPTW</li>
-									<li>Implemented the algorithm in R and tested across simulations with varying noise levels</li>
-									<li>Achieved lowest average mean squared error of 0.00890 versus baseline methods</li>
-								</ul>
+						<div class="timeline-item fade-in-up">
+							<div class="timeline-dot"></div>
+							<div>
+								<span class="timeline-date">May 2025 - Aug 2025</span>
+								<div class="timeline-content">
+									<h3>Bioinformatics Intern</h3>
+									<p class="meta">Agency for Science, Technology and Research (A*STAR) &middot; Singapore</p>
+									<ul>
+										<li>Developed hybrid matching/weighting algorithm to address confounding bias.</li>
+										<li>Outperformed traditional Propensity Score Matching and IPTW.</li>
+										<li>Achieved lowest MSE of 0.00890 in simulations.</li>
+									</ul>
+								</div>
 							</div>
 						</div>
-						<div class="timeline-item reveal">
-							<div class="timeline-date">Jan 2020 - Mar 2020</div>
-							<div class="timeline-card glass">
-								<h3>Research Assistant Intern</h3>
-								<p class="meta">Red Dot Robotics · Singapore</p>
-								<ul>
-									<li>Created airport-road video dataset to improve self-driving luggage transport vehicle accuracy</li>
-									<li>Annotated videos and converted labels into ground truth for CNN training</li>
-									<li>Trained a new model on airport-specific data, improving accuracy over street-trained baseline</li>
-								</ul>
+						<div class="timeline-item fade-in-up">
+							<div class="timeline-dot"></div>
+							<div>
+								<span class="timeline-date">Jan 2020 - Mar 2020</span>
+								<div class="timeline-content">
+									<h3>Research Assistant Intern</h3>
+									<p class="meta">Red Dot Robotics &middot; Singapore</p>
+									<ul>
+										<li>Created airport-road video dataset for self-driving vehicles.</li>
+										<li>Annotated ground truth for CNN training.</li>
+										<li>Improved model accuracy on airport-specific data.</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -175,31 +176,36 @@
 
 			<section class="section" id="education">
 				<div class="container">
-					<div class="section-header">
-						<p class="eyebrow">Academic</p>
-						<h2 class="section-title">Education</h2>
-					</div>
+					<p class="eyebrow">Academic Foundation</p>
+					<h2>Education</h2>
+					<br>
 					<div class="timeline">
-						<div class="timeline-item reveal">
-							<div class="timeline-date">Aug 2022 - May 2026</div>
-							<div class="timeline-card glass">
-								<h3>Nanyang Technological University</h3>
-								<p class="meta">BSc in Mathematical Sciences (Applied Math Track)</p>
-								<ul>
-									<li>Current GPA: 4.81/5.00 (First Class Honours equivalent); Dean's List AY23/24 (Top 5% of cohort)</li>
-									<li>Relevant Courses: Stochastic Finance, Simulation Techniques in Finance, Quantitative Trading Strategies, Neural Networks and Deep Learning, Stochastic Processes, Financial Data Analysis and Applications</li>
-								</ul>
+						<div class="timeline-item fade-in-up">
+							<div class="timeline-dot"></div>
+							<div>
+								<span class="timeline-date">Aug 2022 - May 2026</span>
+								<div class="timeline-content">
+									<h3>Nanyang Technological University</h3>
+									<p class="meta">BSc in Mathematical Sciences (Applied Math Track)</p>
+									<ul>
+										<li>Current GPA: 4.81/5.00 (First Class Honours equivalent).</li>
+										<li>Dean's List AY23/24 (Top 5% of cohort).</li>
+										<li><strong>Relevant Coursework:</strong> Stochastic Finance, Simulation Techniques, Quantitative Trading, Neural Networks.</li>
+									</ul>
+								</div>
 							</div>
 						</div>
-						<div class="timeline-item reveal">
-							<div class="timeline-date">Jan 2014 - Dec 2019</div>
-							<div class="timeline-card glass">
-								<h3>Dunman High School</h3>
-								<p class="meta">Singapore-Cambridge GCE Advanced Level</p>
-								<ul>
-									<li>H2 Mathematics, H2 Further Mathematics, H2 Computing</li>
-									<li>Info-comm Club Executive Committee 2019</li>
-								</ul>
+						<div class="timeline-item fade-in-up">
+							<div class="timeline-dot"></div>
+							<div>
+								<span class="timeline-date">Jan 2014 - Dec 2019</span>
+								<div class="timeline-content">
+									<h3>Dunman High School</h3>
+									<p class="meta">Singapore-Cambridge A Level</p>
+									<ul>
+										<li>H2 Mathematics, H2 Further Mathematics, H2 Computing.</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -208,49 +214,40 @@
 
 			<section class="section" id="skills">
 				<div class="container">
-					<div class="section-header">
-						<p class="eyebrow">Toolbox</p>
-						<h2 class="section-title">Skills</h2>
-					</div>
-					<div class="row">
-						<div class="col-lg-4 mb-4">
-							<div class="glass skill-card reveal">
-								<div class="card-icon"><i class="fas fa-code"></i></div>
-								<h3>Programming Languages &amp; Tools</h3>
-								<div class="chip-row">
-									<span class="chip">Python</span>
-									<span class="chip">Pandas</span>
-									<span class="chip">NumPy</span>
-									<span class="chip">Scikit-learn</span>
-									<span class="chip">R</span>
-									<span class="chip">ggplot2</span>
-									<span class="chip">caret</span>
-								</div>
+					<p class="eyebrow">Technical Toolbox</p>
+					<h2>Skills</h2>
+					<br>
+					<div class="skills-grid">
+						<div class="skill-card fade-in-up">
+							<div class="skill-icon"><i class="fas fa-code"></i></div>
+							<h3>Programming</h3>
+							<div class="skill-tags">
+								<span class="skill-tag">Python</span>
+								<span class="skill-tag">R</span>
+								<span class="skill-tag">SQL</span>
+								<span class="skill-tag">Pandas</span>
+								<span class="skill-tag">NumPy</span>
+								<span class="skill-tag">Scikit-learn</span>
 							</div>
 						</div>
-						<div class="col-lg-4 mb-4">
-							<div class="glass skill-card reveal">
-								<div class="card-icon"><i class="fas fa-superscript"></i></div>
-								<h3>Quantitative Methods</h3>
-								<div class="chip-row">
-									<span class="chip">Stochastic Calculus</span>
-									<span class="chip">Monte Carlo Simulation</span>
-									<span class="chip">Linear Algebra</span>
-									<span class="chip">Optimization</span>
-								</div>
+						<div class="skill-card fade-in-up">
+							<div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+							<h3>Quant Finance</h3>
+							<div class="skill-tags">
+								<span class="skill-tag">Stochastic Calculus</span>
+								<span class="skill-tag">Derivatives Pricing</span>
+								<span class="skill-tag">Black-Scholes</span>
+								<span class="skill-tag">Risk Management</span>
 							</div>
 						</div>
-						<div class="col-lg-4 mb-4">
-							<div class="glass skill-card reveal">
-								<div class="card-icon"><i class="fas fa-shield-alt"></i></div>
-								<h3>Financial Modeling &amp; Analysis</h3>
-								<div class="chip-row">
-									<span class="chip">Derivatives Pricing</span>
-									<span class="chip">Black-Scholes</span>
-									<span class="chip">Binomial Trees</span>
-									<span class="chip">Risk Management</span>
-									<span class="chip">Hedging Strategies</span>
-								</div>
+						<div class="skill-card fade-in-up">
+							<div class="skill-icon"><i class="fas fa-brain"></i></div>
+							<h3>Math &amp; AI</h3>
+							<div class="skill-tags">
+								<span class="skill-tag">Monte Carlo</span>
+								<span class="skill-tag">Optimization</span>
+								<span class="skill-tag">Deep Learning</span>
+								<span class="skill-tag">Linear Algebra</span>
 							</div>
 						</div>
 					</div>
@@ -258,11 +255,13 @@
 			</section>
 		</main>
 
-		<footer class="footer text-center py-4">Built by Yeoh Yu Yong · 2026</footer>
+		<footer>
+			<div class="container">
+				<p>Built by Yeoh Yu Yong &middot; 2026</p>
+			</div>
+		</footer>
 
-		<script src="vendor/jquery/jquery.min.js"></script>
-		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-		<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+		<!-- Custom Main JS (No Dependencies) -->
 		<script src="js/main.js"></script>
 	</body>
 </html>
